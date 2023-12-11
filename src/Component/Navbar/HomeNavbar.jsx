@@ -126,13 +126,15 @@ const HomeNavbar = () => {
                 Contact
               </NavLink>
 
-              <Button
-                radius="full"
-                className="bg-gradient-to-tr font-orbitron from-pink-500 to-yellow-500 text-white shadow-lg"
-              >
-                <BsCloudDownload />
-                Resume
-              </Button>
+              <a download href="../../../public/easin-resume.pdf">
+                <Button
+                  radius="full"
+                  className="bg-gradient-to-tr font-orbitron from-pink-500 to-yellow-500 text-white shadow-lg"
+                >
+                  <BsCloudDownload />
+                  Resume
+                </Button>
+              </a>
             </div>
           </div>
         </nav>
