@@ -14,7 +14,7 @@ const HomeNavbar = () => {
             <div>
               <img
                 className="w-12 rounded-full "
-                src="https://i.ibb.co/Nj32r3V/FB-IMG-1668143230958.jpg"
+                src="https://i.ibb.co/6N79HnP/394559949-374692381622478-7628019852304827346-n.jpg"
                 alt=""
               />
             </div>
@@ -66,17 +66,65 @@ const HomeNavbar = () => {
           >
             <div className="flex flex-col gap-y-4 py-3 gap-x-0 mt-5 md:flex-row md:items-center md:justify-end md:gap-y-0 md:gap-x-7 md:mt-0 md:ps-7">
               <NavLink
-              to="/"
+                to="/"
                 className={({ isActive, isPending }) =>
-                  isPending ? "pending" : isActive ? "text-base underline font-orbitron" : "font-orbitron"
+                  isPending
+                    ? "pending"
+                    : isActive
+                    ? "text-base border-b-1 border-black font-orbitron"
+                    : "font-orbitron"
                 }
               >
                 Home
               </NavLink>
-              <NavLink className="text-base font-orbitron ">About Me</NavLink>
-              <NavLink className="text-base font-orbitron ">Skill</NavLink>
-              <NavLink className="text-base font-orbitron ">Service</NavLink>
-              <NavLink className="text-base font-orbitron ">Contact</NavLink>
+              <NavLink
+                to="/aboutMe"
+                className={({ isActive, isPending }) =>
+                  isPending
+                    ? "pending"
+                    : isActive
+                    ? "text-base border-b-1 border-black font-orbitron"
+                    : "font-orbitron"
+                }
+              >
+                About Me
+              </NavLink>
+              <NavLink
+                to="/skill"
+                className={({ isActive, isPending }) =>
+                  isPending
+                    ? "pending"
+                    : isActive
+                    ? "text-base border-b-1 border-black font-orbitron"
+                    : "font-orbitron"
+                }
+              >
+                Skill
+              </NavLink>
+              <NavLink
+                to="/project"
+                className={({ isActive, isPending }) =>
+                  isPending
+                    ? "pending"
+                    : isActive
+                    ? "text-base border-b-1 border-black font-orbitron"
+                    : "font-orbitron"
+                }
+              >
+                Project
+              </NavLink>
+              <NavLink
+                to="/contact"
+                className={({ isActive, isPending }) =>
+                  isPending
+                    ? "pending"
+                    : isActive
+                    ? "text-base border-b-1 border-black font-orbitron"
+                    : "font-orbitron"
+                }
+              >
+                Contact
+              </NavLink>
 
               <Button
                 radius="full"

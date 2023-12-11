@@ -11,10 +11,12 @@ export default {
       fontFamily: {
         "orbitron": "'Orbitron', sans-serif",
         "robot": "'Silkscreen', sans-serif",
-        "ubuntu": "'Ubuntu', sans-serif"
+        "ubuntu": "'Ubuntu', sans-serif",
+        "font-rubik": "'Rubik', sans-serif",
+        "font-ubuntu": "'Ubuntu', sans-serif"
       }
     },
   },
-  plugins: [nextui()],
+  plugins: [nextui(), require("daisyui")],
 }
 
